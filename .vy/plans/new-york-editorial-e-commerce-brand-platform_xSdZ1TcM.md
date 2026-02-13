@@ -17,7 +17,7 @@ Key pillars of the implementation:
 - [x] **1. Refine Global Typography in index.css** <!-- id:NShZug -->
   Register the serif and sans-serif font families as Tailwind utility classes to ensure consistent application of the New York editorial aesthetic across all components.
 
-- [ ] **2. Develop High-End Navbar & Footer** <!-- id:o0sCmg -->
+- [x] **2. Develop High-End Navbar & Footer** <!-- id:o0sCmg -->
   Create a sophisticated, sticky Navbar using Shadcn's NavigationMenu with mega-menu capabilities and a minimalist Footer containing brand storytelling links.
 
 - [ ] **3. Implement Editorial Landing Page (HomePage)** <!-- id:chsQnN -->
