@@ -32,7 +32,7 @@ Key pillars of the implementation:
 - [x] **6. Configure Routing & Navigation Flow** <!-- id:e1PMWO -->
   Update main.tsx with routes for Categories, Product Details, and About, ensuring smooth scroll-to-top behavior on navigation.
 
-- [ ] **7. Add Framer Motion Micro-interactions** <!-- id:jInU4y -->
+- [x] **7. Add Framer Motion Micro-interactions** <!-- id:jInU4y -->
   Implement subtle fade-ins and reveal animations for editorial text blocks and product images to enhance the premium feel.
 
 ---
