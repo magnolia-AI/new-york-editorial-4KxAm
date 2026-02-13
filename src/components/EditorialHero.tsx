@@ -62,7 +62,7 @@ export function EditorialHero() {
         variants={containerVariants}
       >
         <motion.h1 
-          className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter mb-6"
+          className="text-6xl md:text-8xl lg:text-9xl font-bold mb-6"
           variants={itemVariants}
         >
           THE NEW <br />
@@ -117,4 +117,3 @@ export function EditorialHero() {
     </section>
   );
 }
-

@@ -1,39 +1,27 @@
-# New York Editorial E-commerce & Brand Platform
+# Fix CSS Rendering and Editorial Design System
 
 ## Summary
-Build a sophisticated, editorial-style brand experience inspired by high-end fashion publications and 'The Really Cool Store' aesthetic. The platform will feature immersive typography, high-impact imagery, and a seamless flow between content and commerce.
+The CSS is currently failing to render Tailwind utilities correctly, leading to broken layouts and unstyled Shadcn components. This plan will fix the styling configuration and restore the premium New York Editorial aesthetic.
 
 ## Approach
-Our technical approach leverages the existing Vite + React 19 architecture, utilizing the already installed Shadcn/UI components to maintain design consistency. We will adopt a 'Typography-First' strategy, maximizing the use of the 'Bodoni Moda' serif font for a high-end feel and 'DM Sans' for functional clarity. 
-
-Key pillars of the implementation:
-1. **Editorial Layouts**: Using CSS Grid and Tailwind's flexible containers to create asymmetrical, magazine-like layouts.
-2. **Component Orchestration**: Utilizing `NavigationMenu` for a sleek header and `Carousel` for cinematic hero sections.
-3. **Content Layers**: Implementing Framer Motion transitions for smooth page entry and element reveals.
-4. **Scalable Routing**: Defining clear paths for editorial categories and individual product showcases using React Router 7.
+The core issue is a mismatch between the Tailwind v4 @theme configuration and the semantic color variables. I will align the CSS variables in index.css with the Tailwind theme block, ensuring 'oklch' values are properly mapped. I will then fix the 'mix-blend-difference' in the navigation which is causing text invisibility, and restore the high-impact typography layout seen in the reference mockup.
 
 ## Tasks
 
-- [x] **1. Refine Global Typography in index.css** <!-- id:NShZug -->
-  Register the serif and sans-serif font families as Tailwind utility classes to ensure consistent application of the New York editorial aesthetic across all components.
+- [x] **1. Fix Tailwind v4 @theme variable mapping** <!-- id:n715tW -->
+  Update src/index.css to ensure all semantic tokens like --background, --foreground, and --primary are correctly referenced within the @theme block so Tailwind classes actually apply styles.
 
-- [x] **2. Develop High-End Navbar & Footer** <!-- id:o0sCmg -->
-  Create a sophisticated, sticky Navbar using Shadcn's NavigationMenu with mega-menu capabilities and a minimalist Footer containing brand storytelling links.
+- [ ] **2. Restore Hero Typography and Button alignment** <!-- id:P1biEV -->
+  Update EditorialHero.tsx to fix the layout where text is overlapping. Adjust z-index of the container and ensure the buttons use the correct design system variants (outline/ghost) without breaking their standard padding.
 
-- [x] **3. Implement Editorial Landing Page (HomePage)** <!-- id:chsQnN -->
-  Build a multi-section scrollable experience including a Full-Bleed Hero, 'The Edit' curated grid, a horizontal scrolling carousel for new arrivals, and an 'Editorial Story' section.
+- [ ] **3. Adjust Navbar visibility and blending** <!-- id:ocCN6g -->
+  Modify RootLayout.tsx header classes. The 'mix-blend-difference' is likely making the white text invisible against light backgrounds; I will implement a background-aware or translucent blurred header instead.
 
-- [x] **4. Create Category Template Page** <!-- id:wnhnty -->
-  Design a reusable Category page that filters content/products by type (e.g., Fashion, Living, Art) with an emphasis on large imagery and white space.
+- [ ] **4. Standardize Button components across sections** <!-- id:VUOWRC -->
+  Check all instances of Shadcn Buttons in HomePage.tsx and components/ui/button.tsx. Ensure they use semantic tokens like bg-primary or bg-card instead of hardcoded colors that aren't rendering.
 
-- [x] **5. Build Immersive Product Detail Page** <!-- id:C3eJ6K -->
-  Develop a layout featuring a dual-column scroll (sticky info on one side, scrolling images on the other), integrated with Shadcn Accordions for specifications and a 'Complete the Look' recommendation section.
-
-- [x] **6. Configure Routing & Navigation Flow** <!-- id:e1PMWO -->
-  Update main.tsx with routes for Categories, Product Details, and About, ensuring smooth scroll-to-top behavior on navigation.
-
-- [x] **7. Add Framer Motion Micro-interactions** <!-- id:jInU4y -->
-  Implement subtle fade-ins and reveal animations for editorial text blocks and product images to enhance the premium feel.
+- [ ] **5. Fix Editorial Grid and Story layouts** <!-- id:IKL8im -->
+  Audit EditorialGrid.tsx and EditorialStory.tsx to ensure the CSS Grid gap and aspect-ratio utilities are functioning correctly under the unified styling system.
 
 ---
 plan_id: JEMADjJW
