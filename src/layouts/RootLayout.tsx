@@ -3,9 +3,9 @@ import { Outlet, Link } from 'react-router-dom'
 export function RootLayout() {
   return (
     <div className="min-h-screen flex flex-col font-sans antialiased text-foreground">
-      <header className="fixed top-0 left-0 right-0 z-50 mix-blend-difference py-6 px-10 flex justify-between items-center text-white">
-        <Link to="/" className="text-xl font-serif tracking-tighter uppercase italic">NY/ED</Link>
-        <nav className="hidden md:flex space-x-8 text-[10px] uppercase tracking-[0.2em] font-medium">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/40 py-4 px-10 flex justify-between items-center transition-all duration-300">
+        <Link to="/" className="text-xl font-serif tracking-tighter uppercase italic text-foreground">NY/ED</Link>
+        <nav className="hidden md:flex space-x-8 text-[10px] uppercase tracking-[0.2em] font-medium text-foreground">
           <Link to="/category/fashion" className="hover:opacity-60 transition-opacity">Fashion</Link>
           <Link to="/category/living" className="hover:opacity-60 transition-opacity">Living</Link>
           <Link to="/category/art" className="hover:opacity-60 transition-opacity">Art</Link>
@@ -40,4 +40,3 @@ export function RootLayout() {
     </div>
   )
 }
-

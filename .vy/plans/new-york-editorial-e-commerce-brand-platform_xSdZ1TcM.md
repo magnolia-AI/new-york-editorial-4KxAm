@@ -14,7 +14,7 @@ The core issue is a mismatch between the Tailwind v4 @theme configuration and th
 - [x] **2. Restore Hero Typography and Button alignment** <!-- id:P1biEV -->
   Update EditorialHero.tsx to fix the layout where text is overlapping. Adjust z-index of the container and ensure the buttons use the correct design system variants (outline/ghost) without breaking their standard padding.
 
-- [ ] **3. Adjust Navbar visibility and blending** <!-- id:ocCN6g -->
+- [x] **3. Adjust Navbar visibility and blending** <!-- id:ocCN6g -->
   Modify RootLayout.tsx header classes. The 'mix-blend-difference' is likely making the white text invisible against light backgrounds; I will implement a background-aware or translucent blurred header instead.
 
 - [ ] **4. Standardize Button components across sections** <!-- id:VUOWRC -->
