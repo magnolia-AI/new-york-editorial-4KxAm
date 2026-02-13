@@ -29,7 +29,7 @@ Key pillars of the implementation:
 - [x] **5. Build Immersive Product Detail Page** <!-- id:C3eJ6K -->
   Develop a layout featuring a dual-column scroll (sticky info on one side, scrolling images on the other), integrated with Shadcn Accordions for specifications and a 'Complete the Look' recommendation section.
 
-- [ ] **6. Configure Routing & Navigation Flow** <!-- id:e1PMWO -->
+- [x] **6. Configure Routing & Navigation Flow** <!-- id:e1PMWO -->
   Update main.tsx with routes for Categories, Product Details, and About, ensuring smooth scroll-to-top behavior on navigation.
 
 - [ ] **7. Add Framer Motion Micro-interactions** <!-- id:jInU4y -->
