@@ -23,7 +23,7 @@ Key pillars of the implementation:
 - [x] **3. Implement Editorial Landing Page (HomePage)** <!-- id:chsQnN -->
   Build a multi-section scrollable experience including a Full-Bleed Hero, 'The Edit' curated grid, a horizontal scrolling carousel for new arrivals, and an 'Editorial Story' section.
 
-- [ ] **4. Create Category Template Page** <!-- id:wnhnty -->
+- [x] **4. Create Category Template Page** <!-- id:wnhnty -->
   Design a reusable Category page that filters content/products by type (e.g., Fashion, Living, Art) with an emphasis on large imagery and white space.
 
 - [ ] **5. Build Immersive Product Detail Page** <!-- id:C3eJ6K -->
