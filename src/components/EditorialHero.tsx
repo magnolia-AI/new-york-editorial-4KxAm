@@ -56,37 +56,36 @@ export function EditorialHero() {
 
       {/* Content */}
       <motion.div 
-        className="container relative z-10 text-center text-white"
+        className="container relative z-20 text-center px-4 md:px-6"
         initial="hidden"
         animate="visible"
         variants={containerVariants}
       >
         <motion.h1 
-          className="text-6xl md:text-8xl lg:text-9xl font-bold mb-6"
+          className="text-6xl md:text-8xl lg:text-9xl font-bold mb-8 leading-[0.9] tracking-tight text-white whitespace-pre-line"
           variants={itemVariants}
         >
-          THE NEW <br />
-          STANDARD
+          THE NEW {"\n"} STANDARD
         </motion.h1>
         <motion.p 
-          className="text-lg md:text-xl font-light tracking-widest uppercase mb-8 max-w-2xl mx-auto"
+          className="text-lg md:text-xl font-light tracking-widest uppercase mb-12 max-w-2xl mx-auto text-white"
           variants={itemVariants}
         >
           Experimental Design meets high-performance aesthetics.
         </motion.p>
         <motion.div 
-          className="flex justify-center gap-4"
+          className="flex flex-col sm:flex-row justify-center items-center gap-6"
           variants={itemVariants}
         >
           <Button
             variant="outline"
-            className="border-white text-white hover:bg-white hover:text-black rounded-none px-8 py-6 text-sm tracking-widest"
+            className="rounded-none border-white text-white hover:bg-white hover:text-black min-w-[220px] h-12 text-xs tracking-[0.2em] transition-all duration-300"
           >
             SHOP COLLECTION
           </Button>
           <Button
             variant="ghost"
-            className="text-white hover:bg-white/10 rounded-none px-8 py-6 text-sm tracking-widest"
+            className="rounded-none text-white hover:bg-white/10 min-w-[220px] h-12 text-xs tracking-[0.2em] transition-all duration-300"
           >
             THE EDITORIAL
           </Button>

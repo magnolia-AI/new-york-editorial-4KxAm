@@ -11,7 +11,7 @@ The core issue is a mismatch between the Tailwind v4 @theme configuration and th
 - [x] **1. Fix Tailwind v4 @theme variable mapping** <!-- id:n715tW -->
   Update src/index.css to ensure all semantic tokens like --background, --foreground, and --primary are correctly referenced within the @theme block so Tailwind classes actually apply styles.
 
-- [ ] **2. Restore Hero Typography and Button alignment** <!-- id:P1biEV -->
+- [x] **2. Restore Hero Typography and Button alignment** <!-- id:P1biEV -->
   Update EditorialHero.tsx to fix the layout where text is overlapping. Adjust z-index of the container and ensure the buttons use the correct design system variants (outline/ghost) without breaking their standard padding.
 
 - [ ] **3. Adjust Navbar visibility and blending** <!-- id:ocCN6g -->
