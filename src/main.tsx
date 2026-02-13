@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { RootLayout } from '@/layouts/RootLayout'
 import { HomePage } from '@/pages/HomePage'
 import CategoryPage from '@/pages/CategoryPage'
+import ProductPage from '@/pages/ProductPage'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -13,9 +14,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route element={<RootLayout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/category/:categoryId" element={<CategoryPage />} />
+          <Route path="/product/:productId" element={<ProductPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
 )
-
