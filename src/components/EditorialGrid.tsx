@@ -36,7 +36,7 @@ export function EditorialGrid() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[300px] md:auto-rows-[400px]">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px] md:auto-rows-[450px]">
         {collections.map((item, index) => (
           <Link
             key={index}
@@ -46,14 +46,14 @@ export function EditorialGrid() {
             <img
               src={item.image}
               alt={item.title}
-              className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105 grayscale hover:grayscale-0 transition-all"
+              className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105 grayscale hover:grayscale-0"
             />
-            <div className="absolute inset-0 bg-black/5 group-hover:bg-black/20 transition-colors duration-500" />
-            <div className="absolute bottom-8 left-8 text-white">
-              <Badge variant="outline" className="text-white border-white/40 mb-2 rounded-none bg-black/20 backdrop-blur-sm text-[10px] tracking-widest uppercase">
+            <div className="absolute inset-0 bg-background/5 group-hover:bg-background/20 transition-colors duration-500" />
+            <div className="absolute bottom-10 left-10 text-primary-foreground drop-shadow-sm">
+              <Badge variant="outline" className="text-primary-foreground border-primary-foreground/40 mb-3 rounded-none bg-background/20 backdrop-blur-sm text-[10px] tracking-widest uppercase px-3 py-1">
                 {item.category}
               </Badge>
-              <h3 className="text-2xl font-light tracking-tighter uppercase">{item.title}</h3>
+              <h3 className="text-3xl font-light tracking-tighter uppercase">{item.title}</h3>
             </div>
           </Link>
         ))}

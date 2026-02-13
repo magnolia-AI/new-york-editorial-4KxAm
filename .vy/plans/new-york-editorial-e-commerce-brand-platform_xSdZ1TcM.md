@@ -20,7 +20,7 @@ The core issue is a mismatch between the Tailwind v4 @theme configuration and th
 - [x] **4. Standardize Button components across sections** <!-- id:VUOWRC -->
   Check all instances of Shadcn Buttons in HomePage.tsx and components/ui/button.tsx. Ensure they use semantic tokens like bg-primary or bg-card instead of hardcoded colors that aren't rendering.
 
-- [ ] **5. Fix Editorial Grid and Story layouts** <!-- id:IKL8im -->
+- [x] **5. Fix Editorial Grid and Story layouts** <!-- id:IKL8im -->
   Audit EditorialGrid.tsx and EditorialStory.tsx to ensure the CSS Grid gap and aspect-ratio utilities are functioning correctly under the unified styling system.
 
 ---
