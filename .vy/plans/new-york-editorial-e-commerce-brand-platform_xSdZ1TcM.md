@@ -20,7 +20,7 @@ Key pillars of the implementation:
 - [x] **2. Develop High-End Navbar & Footer** <!-- id:o0sCmg -->
   Create a sophisticated, sticky Navbar using Shadcn's NavigationMenu with mega-menu capabilities and a minimalist Footer containing brand storytelling links.
 
-- [ ] **3. Implement Editorial Landing Page (HomePage)** <!-- id:chsQnN -->
+- [x] **3. Implement Editorial Landing Page (HomePage)** <!-- id:chsQnN -->
   Build a multi-section scrollable experience including a Full-Bleed Hero, 'The Edit' curated grid, a horizontal scrolling carousel for new arrivals, and an 'Editorial Story' section.
 
 - [ ] **4. Create Category Template Page** <!-- id:wnhnty -->
