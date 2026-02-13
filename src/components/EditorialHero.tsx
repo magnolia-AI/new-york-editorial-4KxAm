@@ -79,7 +79,7 @@ export function EditorialHero() {
         >
           <Button
             variant="outline"
-            className="rounded-none border-white text-white hover:bg-white hover:text-black min-w-[220px] h-12 text-xs tracking-[0.2em] transition-all duration-300"
+            className="rounded-none border-white/40 text-white bg-transparent hover:bg-white hover:text-black hover:border-white min-w-[220px] h-12 text-xs tracking-[0.2em] transition-all duration-300 backdrop-blur-sm"
           >
             SHOP COLLECTION
           </Button>
