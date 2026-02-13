@@ -2,6 +2,7 @@ import { EditorialHero } from "@/components/EditorialHero";
 import { EditorialGrid } from "@/components/EditorialGrid";
 import { ProductCarousel } from "@/components/ProductCarousel";
 import { EditorialStory } from "@/components/EditorialStory";
+import { Button } from "@/components/ui/button";
 
 export function HomePage() {
   return (
@@ -24,13 +25,12 @@ export function HomePage() {
               placeholder="Email address"
               className="flex-1 bg-muted px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary"
             />
-            <button className="bg-foreground text-background px-8 py-3 text-sm font-bold tracking-widest uppercase transition-colors hover:bg-foreground/90">
+            <Button className="rounded-none px-8 py-3 text-sm font-bold tracking-widest uppercase transition-colors">
               JOIN
-            </button>
+            </Button>
           </div>
         </div>
       </section>
     </div>
   );
 }
-

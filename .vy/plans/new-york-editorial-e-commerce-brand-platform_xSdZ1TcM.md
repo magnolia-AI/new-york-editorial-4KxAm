@@ -17,7 +17,7 @@ The core issue is a mismatch between the Tailwind v4 @theme configuration and th
 - [x] **3. Adjust Navbar visibility and blending** <!-- id:ocCN6g -->
   Modify RootLayout.tsx header classes. The 'mix-blend-difference' is likely making the white text invisible against light backgrounds; I will implement a background-aware or translucent blurred header instead.
 
-- [ ] **4. Standardize Button components across sections** <!-- id:VUOWRC -->
+- [x] **4. Standardize Button components across sections** <!-- id:VUOWRC -->
   Check all instances of Shadcn Buttons in HomePage.tsx and components/ui/button.tsx. Ensure they use semantic tokens like bg-primary or bg-card instead of hardcoded colors that aren't rendering.
 
 - [ ] **5. Fix Editorial Grid and Story layouts** <!-- id:IKL8im -->
